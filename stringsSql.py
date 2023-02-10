@@ -1,3 +1,4 @@
+campoRetorno = ''
 comandosSql = {
     0 : """
             CREATE TABLE IF NOT EXISTS Produtos ( 
@@ -11,5 +12,6 @@ comandosSql = {
     1 : "SELECT codigo, descricao FROM Produtos WHERE codigo = ?",
     2 : "DELETE FROM Produtos WHERE codigo = ?",
     3 : "INSERT INTO produtos ( descricao, preco, qt, peso, vencimento) VALUES ( ?, ?, ?, ?, ?)",
-    4 : "SELECT * FROM Produtos"
+    4 : "SELECT * FROM Produtos",
+    5 : "UPDATE Produtos SET descricao = ? WHERE codigo = ?", 
 }
